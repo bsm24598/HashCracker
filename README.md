@@ -1,4 +1,4 @@
-# Java HashCracker
+# Java 11 HashCracker
 
 ### Educational Hash Cracker Written in Java
 
