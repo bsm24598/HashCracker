@@ -27,5 +27,14 @@ wordlists/
 └── words.txt
 </pre>
 
-https://user-images.githubusercontent.com/49283017/154872213-b82a0dac-6f9d-41fb-97d5-c2a6583a9f5b.mp4
+Example Hashes to try:
 
+- **MD5 Hash**     - 482c811da5d5b4bc6d497ffa98491e38
+- **SHA1 Hash**    - cbfdac6008f9cab4083784cbd1874f76618d2a97
+- **SHA-256 Hash** - ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
+
+![password-found](https://user-images.githubusercontent.com/49283017/154895284-97ba8903-7cb7-4725-b3f6-a2a396f860d7.gif)
+
+**Wordlists**:
+
+[Crackstation](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
