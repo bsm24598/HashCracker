@@ -58,6 +58,9 @@ public class HashingAlgorithm {
                             }
                         }
                     }
+                } else if(file.exists() && file.isDirectory()) {
+                    this.wordListDirectory = new File(file.getAbsolutePath());
+                    crackHash();
                 }
             }
         } catch (IOException e) {
