@@ -14,7 +14,6 @@ public class HashCrackController {
     private final Scanner scanner = new Scanner(System.in);
     private File wordlistDirectoryPath;
 
-
     /**
      * Constructor
      */
@@ -81,7 +80,7 @@ public class HashCrackController {
     private Hash getUserHash(int hashOption) {
         //while hash is not confirmed to be valid
         while(!isHashValid) {
-            System.out.println("Enter Hash: ");
+            System.out.print("Enter Hash: ");
             String userHashInput = scanner.nextLine();
             Hash hash = new Hash(userHashInput.strip());
             if(hash.isHashValid(hashOption)) {
@@ -106,7 +105,7 @@ public class HashCrackController {
         File f;
         while(!pathIsValid) {
             System.out.println("\nPlease provide the File Path to the Directory Containing your Wordlists");
-            System.out.println("Enter Path: ");
+            System.out.print("Enter Path: ");
             String filePath = scanner.nextLine();
             try {
                 f = new File(filePath);
@@ -130,23 +129,6 @@ public class HashCrackController {
     }
 
     /**
-     * The displayMenu() method will display the
-     * welcome menu and hashing algorithm options.
-     */
-    private void displayMenu() {
-        System.out.println("=".repeat(40));
-        System.out.println("Hash Crack");
-        System.out.println("=".repeat(40));
-        System.out.println("-".repeat(40));
-        System.out.println("1 - MD5 Hashing Algorithm");
-        System.out.println("2 - SHA-1 Hashing Algorithm");
-        System.out.println("3 - SHA-256 Hashing Algorithm");
-        System.out.println("-".repeat(40));
-        System.out.println("Please select a Hashing Algorithm from Above");
-        System.out.println("\nEnter Number: ");
-    }
-
-    /**
      * The printClosingMenu() method will display the
      * closing menu and whether or not the password
      * was cracked. It will also display how many
@@ -156,15 +138,44 @@ public class HashCrackController {
      */
     private void printClosingMenu(HashingAlgorithm hashingAlgorithm) {
         if(hashingAlgorithm.isPasswordFound()) {
-            System.out.println("\n" + "$".repeat(50));
-            System.out.println("Password Found: " + hashingAlgorithm.getCrackedPassword());
-            System.out.println("Lines Searched: " + hashingAlgorithm.getTotalPasswordsSearched());
-            System.out.println("$".repeat(50));
+            System.out.println("\n" + "*".repeat(50));
+            System.out.println("PASSWORD FOUND: " + hashingAlgorithm.getCrackedPassword());
+            System.out.println("LINES SEARCHED: " + hashingAlgorithm.getTotalPasswordsSearched());
+            System.out.println("*".repeat(50));
         } else {
             System.out.println("\n" + ":( ".repeat(15));
             System.out.println("Password Not Found");
             System.out.println("Lines Searched: " + hashingAlgorithm.getTotalPasswordsSearched());
             System.out.println(":( ".repeat(15));
         }
+    }
+
+    /**
+     * The displayMenu() method will display the
+     * welcome menu and hashing algorithm options.
+     */
+    private void displayMenu() {
+        String programLogo =
+                "██╗  ██╗ █████╗ ███████╗██╗  ██╗ ██████╗██████╗" +
+                        "  █████╗  ██████╗██╗  ██╗███████╗██████╗\n" +
+                        "██║  ██║██╔══██╗██╔════╝██║  ██║██╔════╝" +
+                        "██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗ \n" +
+                        "███████║███████║███████╗███████║██║     ██████╔╝" +
+                        "███████║██║     █████╔╝ █████╗  ██████╔╝\n" +
+                        "██╔══██║██╔══██║╚════██║██╔══██║██║     ██╔══██╗" +
+                        "██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗\n" +
+                        "██║  ██║██║  ██║███████║██║  ██║╚██████╗██║  ██║" +
+                        "██║  ██║╚██████╗██║  ██╗███████╗██║  ██║\n" +
+                        "╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝" +
+                        "╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝";
+        System.out.println("\n" + "=".repeat(90));
+        System.out.println(programLogo);
+        System.out.println("=".repeat(90));
+        System.out.println("1 - MD5 Hashing Algorithm");
+        System.out.println("2 - SHA-1 Hashing Algorithm");
+        System.out.println("3 - SHA-256 Hashing Algorithm");
+        System.out.println("-".repeat(40));
+        System.out.println("Please select a Hashing Algorithm from Above");
+        System.out.print("\nEnter Number: ");
     }
 }
