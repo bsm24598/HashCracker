@@ -27,8 +27,12 @@ wordlists/
 └── words.txt
 </pre>
 
+Example Hashes to try:
+
+- **MD5 Hash**     - 482c811da5d5b4bc6d497ffa98491e38
+- **SHA1 Hash**    - cbfdac6008f9cab4083784cbd1874f76618d2a97
+- **SHA-256 Hash** - ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
+
+
 ![password-crack](https://user-images.githubusercontent.com/49283017/154892429-2d580027-2570-4855-a1c4-f587a342a4a5.gif)
-
-
-https://user-images.githubusercontent.com/49283017/154872213-b82a0dac-6f9d-41fb-97d5-c2a6583a9f5b.mp4
 
