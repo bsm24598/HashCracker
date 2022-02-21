@@ -1,6 +1,6 @@
-# HashCracker
+# Java HashCracker
 
-### Educational Hash Cracker
+### Educational Hash Cracker Written in Java
 
 This is an educational hash/password cracker that can be used for Capture the Flag (CTF) competitions. 
 
