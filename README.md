@@ -13,6 +13,7 @@ Example directory: /home/{user}/wordlists
 
 Example directory structure:
 
+<pre>
 wordlists/
 ├── english-words.txt
 ├── general.txt
@@ -24,8 +25,7 @@ wordlists/
 │   ├── baseball.txt
 │   └── football.txt
 └── words.txt
-
-
+</pre>
 
 https://user-images.githubusercontent.com/49283017/154872213-b82a0dac-6f9d-41fb-97d5-c2a6583a9f5b.mp4
 
