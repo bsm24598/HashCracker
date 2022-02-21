@@ -156,8 +156,8 @@ public class HashCrackController {
      */
     private void printClosingMenu(HashingAlgorithm hashingAlgorithm) {
         if(hashingAlgorithm.isPasswordFound()) {
-            System.out.println("$".repeat(50));
-            System.out.println("\nPassword Found: " + hashingAlgorithm.getCrackedPassword());
+            System.out.println("\n" + "$".repeat(50));
+            System.out.println("Password Found: " + hashingAlgorithm.getCrackedPassword());
             System.out.println("Lines Searched: " + hashingAlgorithm.getTotalPasswordsSearched());
             System.out.println("$".repeat(50));
         } else {
