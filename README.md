@@ -27,5 +27,8 @@ wordlists/
 └── words.txt
 </pre>
 
+![password-crack](https://user-images.githubusercontent.com/49283017/154892429-2d580027-2570-4855-a1c4-f587a342a4a5.gif)
+
+
 https://user-images.githubusercontent.com/49283017/154872213-b82a0dac-6f9d-41fb-97d5-c2a6583a9f5b.mp4
 
